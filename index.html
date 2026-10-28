@@ -69,7 +69,8 @@ h1 em::before{content:"";position:absolute;inset:6% -3% 2% -3%;background:var(--
 .ellipse::after{content:"";position:absolute;inset:11%;border-radius:50%;background:var(--indigo);opacity:.95}
 .photo{position:relative;overflow:hidden;border-radius:6px;border:3px solid var(--ink);box-shadow:10px 10px 0 var(--yellow);background:var(--indigo-deep)}
 .photo img{width:100%;height:100%;object-fit:cover}
-.hero-photo{position:relative;z-index:2;width:78%;margin-left:auto;aspect-ratio:3/4.1}
+.hero-photo{position:relative;z-index:2;width:86%;margin-left:auto;aspect-ratio:1/1.2}
+.hero-photo img{object-position:68% center}
 .hero-photo2{position:absolute;z-index:3;left:0;bottom:-34px;width:40%;aspect-ratio:1/1.1;box-shadow:8px 8px 0 var(--indigo)}
 .sticker{position:absolute;z-index:4;right:-12px;top:34px;width:150px;height:150px;border-radius:50%;background:var(--yellow);color:var(--ink);display:grid;place-items:center;text-align:center;font-family:var(--head);font-weight:900;text-transform:uppercase;line-height:1;font-size:17px;letter-spacing:.02em;transform:rotate(10deg);border:3px solid var(--ink);box-shadow:5px 5px 0 var(--ink)}
 .sticker b{display:block;font-size:50px;line-height:.9}
@@ -102,7 +103,7 @@ h2{font-family:var(--head);font-weight:900;text-transform:uppercase;font-size:cl
 .services .wrap{display:grid;grid-template-columns:minmax(0,.78fr) minmax(0,1.22fr);gap:80px;align-items:start;position:relative}
 .services .eyebrow{color:var(--yellow)}
 .services .eyebrow::before{box-shadow:none}
-.services h2{color:#fff}
+.services h2{color:#fff;font-size:clamp(38px,4.3vw,66px)}
 .services h2 span{color:var(--yellow)}
 .services aside{position:sticky;top:130px}
 .services aside p{color:#DDE0FF;max-width:400px;margin-bottom:34px}
@@ -238,8 +239,8 @@ footer .bottom a:hover{color:var(--yellow)}
     </div>
     <div class="hero-art">
       <div class="ellipse" aria-hidden="true"></div>
-      <div class="photo hero-photo"><img src="images/floor.jpg" alt="Freshly cleaned and polished commercial floor in a store aisle"></div>
-      <div class="photo hero-photo2"><img src="images/hood.jpg" alt="Clean stainless steel kitchen exhaust hood"></div>
+      <div class="photo hero-photo"><img src="images/lobby.jpg" alt="Clean modern commercial lobby with polished floors and spotless glass"></div>
+      <div class="photo hero-photo2"><img src="images/floor.jpg" alt="Freshly cleaned and polished floor in a store aisle"></div>
       <div class="sticker"><div><b>24</b>hour<br>emergency<br>service</div></div>
     </div>
   </div>
@@ -258,8 +259,8 @@ footer .bottom a:hover{color:var(--yellow)}
 <section class="story" id="story">
   <div class="wrap">
     <div class="story-art rv">
-      <div class="photo a"><img src="images/store.jpg" alt="Clean supermarket entrance and shop floor serviced by Bravo Building Services" loading="lazy"></div>
-      <div class="photo b"><img src="images/night.jpg" alt="Illuminated commercial storefront at night" loading="lazy"></div>
+      <div class="photo a"><img src="images/office.jpg" alt="Clean open-plan office with freshly vacuumed carpet" loading="lazy"></div>
+      <div class="photo b"><img src="images/hallway.jpg" alt="Freshly waxed hallway floor with floor buffer" loading="lazy"></div>
       <div class="tag"><span>Calgary,</span> AB</div>
     </div>
     <div class="rv">
@@ -279,7 +280,7 @@ footer .bottom a:hover{color:var(--yellow)}
       <h2>Building maintenance in <span>Calgary, AB</span></h2>
       <p>Cleaning and maintenance for homes and offices, on a long term, monthly or daily contract.</p>
       <a class="btn btn-yellow" href="https://bravobuildingservicesyyc.com/services/">All services <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      <div class="photo"><img src="images/floor.jpg" alt="Polished floor with blue floor tiles after cleaning" loading="lazy"></div>
+      <div class="photo"><img src="images/tower.jpg" alt="Clean glass office tower against a blue sky" loading="lazy"></div>
     </aside>
     <ol class="rows rv">
       <li><a href="https://bravobuildingservicesyyc.com/services/"><div><strong>Window cleaning</strong></div><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a></li>
@@ -299,7 +300,7 @@ footer .bottom a:hover{color:var(--yellow)}
         <span class="eyebrow">Our work</span>
         <h2>Straight from the job site</h2>
       </div>
-      <p>Photos from properties we look after in Calgary.</p>
+      <p>Photos from our gallery.</p>
     </div>
     <div class="strip-photos rv">
       <div class="photo"><img src="images/night.jpg" alt="Storefront sign lit up at night" loading="lazy"></div>
