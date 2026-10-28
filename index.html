@@ -67,11 +67,10 @@ h1 em::before{content:"";position:absolute;inset:6% -3% 2% -3%;background:var(--
 .hero-art{position:relative;min-height:600px}
 .ellipse{position:absolute;width:128%;aspect-ratio:2.35/1;left:-24%;top:20%;border-radius:50%;background:var(--yellow);transform:rotate(-14deg);z-index:0}
 .ellipse::after{content:"";position:absolute;inset:11%;border-radius:50%;background:var(--indigo);opacity:.95}
-.photo{position:relative;overflow:hidden;clip-path:polygon(0 0,100% 0,100% calc(100% - 56px),calc(100% - 56px) 100%,0 100%);background:var(--indigo-deep)}
+.photo{position:relative;overflow:hidden;border-radius:6px;border:3px solid var(--ink);box-shadow:10px 10px 0 var(--yellow);background:var(--indigo-deep)}
 .photo img{width:100%;height:100%;object-fit:cover}
 .hero-photo{position:relative;z-index:2;width:78%;margin-left:auto;aspect-ratio:3/4.1}
-.hero-photo2{position:absolute;z-index:3;left:0;bottom:-34px;width:40%;aspect-ratio:1/1.1;border:0}
-.hero-photo2::after{content:"";position:absolute;inset:0;border:6px solid var(--paper);clip-path:inherit;pointer-events:none}
+.hero-photo2{position:absolute;z-index:3;left:0;bottom:-34px;width:40%;aspect-ratio:1/1.1;box-shadow:8px 8px 0 var(--indigo)}
 .sticker{position:absolute;z-index:4;right:-12px;top:34px;width:150px;height:150px;border-radius:50%;background:var(--yellow);color:var(--ink);display:grid;place-items:center;text-align:center;font-family:var(--head);font-weight:900;text-transform:uppercase;line-height:1;font-size:17px;letter-spacing:.02em;transform:rotate(10deg);border:3px solid var(--ink);box-shadow:5px 5px 0 var(--ink)}
 .sticker b{display:block;font-size:50px;line-height:.9}
 
@@ -89,8 +88,7 @@ h1 em::before{content:"";position:absolute;inset:6% -3% 2% -3%;background:var(--
 .story .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:80px;align-items:center}
 .story-art{position:relative;height:620px}
 .story-art .a{position:absolute;left:0;top:0;width:66%;height:78%}
-.story-art .b{position:absolute;right:0;bottom:0;width:52%;height:56%;border:0}
-.story-art .b::after{content:"";position:absolute;inset:0;border:6px solid var(--paper);clip-path:inherit;pointer-events:none}
+.story-art .b{position:absolute;right:0;bottom:0;width:52%;height:56%;box-shadow:8px 8px 0 var(--indigo)}
 .story-art .tag{position:absolute;left:46%;bottom:12%;z-index:5;background:var(--ink);color:#fff;padding:12px 18px;font-weight:700;font-size:14px;letter-spacing:.1em;text-transform:uppercase;transform:rotate(-4deg)}
 .story-art .tag span{color:var(--yellow)}
 h2{font-family:var(--head);font-weight:900;text-transform:uppercase;font-size:clamp(42px,5.6vw,84px);line-height:.92;color:var(--indigo-deep);margin:18px 0 26px}
@@ -108,7 +106,7 @@ h2{font-family:var(--head);font-weight:900;text-transform:uppercase;font-size:cl
 .services h2 span{color:var(--yellow)}
 .services aside{position:sticky;top:130px}
 .services aside p{color:#DDE0FF;max-width:400px;margin-bottom:34px}
-.services .photo{width:min(330px,100%);aspect-ratio:3/3.6;display:block;margin-top:44px;border:0}
+.services .photo{width:min(330px,100%);aspect-ratio:3/3.6;display:block;margin-top:44px;box-shadow:10px 10px 0 var(--ink)}
 ol.rows{list-style:none;counter-reset:r;border-top:2px solid rgba(255,255,255,.35)}
 ol.rows li{counter-increment:r}
 ol.rows a{display:grid;grid-template-columns:70px 1fr 54px;align-items:center;gap:18px;padding:28px 18px;border-bottom:2px solid rgba(255,255,255,.35);transition:background .25s,color .25s,padding .25s}
@@ -126,12 +124,11 @@ ol.rows a:hover .go{transform:rotate(-45deg)}
 .jobs-head{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:60px}
 .jobs-head h2{margin-bottom:0}
 .jobs-head p{max-width:360px;color:#34355E}
-.strip-photos{display:grid;grid-template-columns:1fr 1.25fr 1fr 1.1fr;gap:22px;align-items:end}
+.strip-photos{display:grid;grid-template-columns:1fr 1.25fr 1fr 1.1fr;gap:30px;align-items:end;padding-right:10px}
 .strip-photos .photo{height:480px}
 .strip-photos .photo:nth-child(2){height:560px}
 .strip-photos .photo:nth-child(3){height:420px}
 .strip-photos .photo:nth-child(4){height:520px}
-.strip-photos .photo:nth-child(odd){clip-path:polygon(56px 0,100% 0,100% 100%,0 100%,0 56px)}
 .strip-photos .photo img{transition:transform .6s}
 .strip-photos .photo:hover img{transform:scale(1.05)}
 
